@@ -82,6 +82,22 @@ MATCH (u:User) RETURN u.name, u.pagerank, u.community ORDER BY u.pagerank DESC L
 
 **Elasticsearch indices:** `reddit-comments`, `reddit-posts`, `tweets` (50k balanced sample), `users` (top 50k by PageRank), `claims` (LIAR with predicted `prob_fake`), `youtube-videos`. Field types are in `MAPPINGS` in `src/index_es.py`. Always filter `claims` on `split:test`: predictions on train/valid are in-sample (about 75 % vs 61.7 % on test).
 
+# Dashboard Screenshots from Kibana
+
+## Reddit Comments Overview
+<img width="1808" height="847" alt="Screenshot 2026-11-03 124233" src="https://github.com/user-attachments/assets/3b1be2fe-fcc9-4480-99af-73bccbbcf3ff" />
+
+## Top reddit topics
+<img width="1812" height="793" alt="Screenshot 2026-11-03 124353" src="https://github.com/user-attachments/assets/01895051-59b7-4f05-aa5e-8bb4534cf67e" />
+
+## Top influencers
+<img width="1811" height="397" alt="Screenshot 2026-11-03 124447" src="https://github.com/user-attachments/assets/8308884b-7ff1-4134-bf65-5ffb49fa0244" />
+
+## Misinformation overview from LIAR dataset
+<img width="1811" height="795" alt="Screenshot 2026-11-03 124551" src="https://github.com/user-attachments/assets/a63a631d-9289-419c-b2a5-1efb8299ee22" />
+
+## YouTube Overview
+<img width="1812" height="797" alt="Screenshot 2026-11-03 124907" src="https://github.com/user-attachments/assets/a41fb9e8-95df-46aa-85f7-a6820df134ce" />
 
 ## Design decisions and deviations from the brief
 

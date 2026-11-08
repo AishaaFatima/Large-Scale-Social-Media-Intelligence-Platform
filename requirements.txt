@@ -1,0 +1,26 @@
+# Core
+pandas>=2.0
+numpy
+pyarrow
+tqdm
+python-dotenv
+emoji>=2.0
+langdetect
+# Sentiment (step 3)
+torch
+transformers
+scikit-learn
+# Topics (step 4)
+bertopic
+sentence-transformers
+# Graph (step 5)
+networkx
+neo4j
+python-louvain
+# Search (step 7)
+elasticsearch>=8.15
+# Viz / notebooks
+matplotlib
+seaborn
+ipykernel
+pytest

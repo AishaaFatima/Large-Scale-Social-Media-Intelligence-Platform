@@ -1,6 +1,7 @@
 # Large-Scale Social Media Intelligence Platform
 
 An end-to-end pipeline that loads social-media datasets, measures **sentiment over time**, discovers **topics**, maps **influencers** with a user-interaction graph, flags likely **misinformation**, and exposes everything through **Elasticsearch + Kibana** (search, dashboards, alerts).
+This project was assigned to me during my internship as Data Science Intern at Nexvia Technologies. I thank them for this opportunity.
 
 <img width="1180" height="740" alt="architecture" src="https://github.com/user-attachments/assets/13d84a41-0ca1-4a88-a733-d171d055e381" />
 

@@ -82,7 +82,6 @@ MATCH (u:User) RETURN u.name, u.pagerank, u.community ORDER BY u.pagerank DESC L
 
 **Elasticsearch indices:** `reddit-comments`, `reddit-posts`, `tweets` (50k balanced sample), `users` (top 50k by PageRank), `claims` (LIAR with predicted `prob_fake`), `youtube-videos`. Field types are in `MAPPINGS` in `src/index_es.py`. Always filter `claims` on `split:test`: predictions on train/valid are in-sample (about 75 % vs 61.7 % on test).
 
-Dashboard build steps: [`docs/kibana_dashboards.md`](docs/kibana_dashboards.md).
 
 ## Design decisions and deviations from the brief
 
